@@ -1,92 +1,104 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0b1e" />
-      <stop offset="100%" stop-color="#030511" />
-    </linearGradient>
-    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8b5cf6" />
-      <stop offset="100%" stop-color="#ec4899" />
-    </linearGradient>
-    <filter id="glow3" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-  </defs>
+  <!-- Comic Shadow -->
+  <rect x="14" y="14" width="576" height="356" rx="24" fill="#000000" />
+  <rect x="8" y="8" width="576" height="356" rx="22" fill="#312e81" stroke="#000000" stroke-width="5" />
 
-  <!-- Background Canvas -->
-  <rect width="600" height="380" rx="16" fill="url(#bg3)" stroke="#1e293b" stroke-width="2" />
+  <!-- Window Header Bar (Chunky Purple) -->
+  <path d="M 8 30 C 8 18, 18 8, 30 8 L 562 8 C 574 8, 584 18, 584 30 L 584 52 L 8 52 Z" fill="#c084fc" stroke="#000000" stroke-width="5" />
 
-  <!-- App Header -->
-  <rect x="0" y="0" width="600" height="42" rx="16" fill="#0f172a" />
-  <rect x="0" y="32" width="600" height="10" fill="#0f172a" />
-  <line x1="0" y1="42" x2="600" y2="42" stroke="#1e293b" stroke-width="1" />
+  <circle cx="34" cy="30" r="9" fill="#f43f5e" stroke="#000000" stroke-width="3" />
+  <circle cx="60" cy="30" r="9" fill="#facc15" stroke="#000000" stroke-width="3" />
+  <circle cx="86" cy="30" r="9" fill="#4ade80" stroke="#000000" stroke-width="3" />
 
-  <!-- Window Dots -->
-  <circle cx="24" cy="21" r="5" fill="#ef4444" />
-  <circle cx="42" cy="21" r="5" fill="#f59e0b" />
-  <circle cx="60" cy="21" r="5" fill="#10b981" />
-
-  <text x="300" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">
-    NexusAI // Multi-Agent Pipeline Graph
+  <rect x="180" y="18" width="240" height="26" rx="13" fill="#ffffff" stroke="#000000" stroke-width="3" />
+  <text x="300" y="36" font-family="'Fredoka', sans-serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">
+    🤖 Nexus AI Brain Box
   </text>
-  <rect x="500" y="12" width="75" height="20" rx="10" fill="url(#purpleGrad)" />
-  <text x="537" y="25" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">⚡ LIVE RUN</text>
 
-  <!-- Left: Agent Workflow Graph -->
-  <g transform="translate(20, 60)">
-    <!-- Node 1: Ingestion -->
-    <rect x="10" y="60" width="130" height="60" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5" />
-    <text x="22" y="85" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#38bdf8">1. Vector Embed</text>
-    <text x="22" y="103" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">ada-002 • 1536d</text>
+  <!-- Left: Cute Floating AI Companion Robot -->
+  <g transform="translate(45, 80)">
+    <!-- Antenna -->
+    <line x1="85" y1="20" x2="85" y2="-5" stroke="#000000" stroke-width="4" />
+    <circle cx="85" cy="-8" r="8" fill="#facc15" stroke="#000000" stroke-width="3" />
+    <!-- Electric spark -->
+    <path d="M 85 -22 L 92 -15 L 85 -18 L 88 -10" stroke="#facc15" stroke-width="3" fill="none" stroke-linecap="round" />
 
-    <!-- Connector 1 -> 2 -->
-    <path d="M 140 90 L 190 90" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4" />
-    <circle cx="165" cy="90" r="3" fill="#38bdf8" filter="url(#glow3)" />
+    <!-- Robot Head Body -->
+    <rect x="15" y="25" width="140" height="135" rx="36" fill="#f0abfc" stroke="#000000" stroke-width="5" />
+    
+    <!-- Face Screen -->
+    <rect x="30" y="45" width="110" height="75" rx="20" fill="#0f172a" stroke="#000000" stroke-width="4" />
 
-    <!-- Node 2: Reasoning Router -->
-    <rect x="190" y="40" width="150" height="100" rx="12" fill="#0f172a" stroke="#8b5cf6" stroke-width="2" filter="url(#glow3)" />
-    <text x="205" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="bold" fill="#c084fc">2. LLM Planner</text>
-    <text x="205" y="88" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">Model: Gemini 2.5 Flash</text>
-    <rect x="205" y="102" width="70" height="18" rx="4" fill="#8b5cf6" opacity="0.3" />
-    <text x="240" y="114" font-family="'JetBrains Mono', monospace" font-size="8" fill="#c084fc" text-anchor="middle">Thinking...</text>
+    <!-- Big Cute Glowing Eyes -->
+    <circle cx="60" cy="80" r="14" fill="#38bdf8" />
+    <circle cx="56" cy="76" r="4.5" fill="#ffffff" />
+    <circle cx="110" cy="80" r="14" fill="#38bdf8" />
+    <circle cx="106" cy="76" r="4.5" fill="#ffffff" />
+    
+    <!-- Cheerful Beep Mouth -->
+    <path d="M 75 102 Q 85 110 95 102" stroke="#38bdf8" stroke-width="3.5" fill="none" stroke-linecap="round" />
 
-    <!-- Connector 2 -> 3 (Top Branch) -->
-    <path d="M 340 70 L 390 40" stroke="#8b5cf6" stroke-width="2" />
-    <!-- Connector 2 -> 4 (Bottom Branch) -->
-    <path d="M 340 110 L 390 140" stroke="#8b5cf6" stroke-width="2" />
+    <!-- Cute Float Jet Pack Body -->
+    <rect x="55" y="165" width="60" height="40" rx="14" fill="#a855f7" stroke="#000000" stroke-width="4" />
+    <!-- Jet flames -->
+    <polygon points="65,205 75,230 85,205" fill="#facc15" stroke="#000000" stroke-width="2" />
+    <polygon points="85,205 95,230 105,205" fill="#f43f5e" stroke="#000000" stroke-width="2" />
 
-    <!-- Node 3: Tool Execution (Code Interpreter) -->
-    <rect x="390" y="15" width="160" height="55" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.5" />
-    <text x="405" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#34d399">3a. Code Sandbox</text>
-    <text x="405" y="55" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">Status: Success (0.4s)</text>
-
-    <!-- Node 4: Synthesis -->
-    <rect x="390" y="115" width="160" height="55" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5" />
-    <text x="405" y="138" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#fbbf24">3b. Web Retriever</text>
-    <text x="405" y="155" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">8 sources validated</text>
+    <!-- Comic Badge -->
+    <g transform="translate(15, 235)">
+      <rect width="140" height="34" rx="10" fill="#facc15" stroke="#000000" stroke-width="3" />
+      <text x="70" y="22" font-family="'Fredoka', sans-serif" font-size="12" font-weight="bold" fill="#000000" text-anchor="middle">🧠 IQ 9000 AGENT</text>
+    </g>
   </g>
 
-  <!-- Bottom: Streaming Output Console Card -->
-  <g transform="translate(20, 240)">
-    <rect width="560" height="120" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
-    
-    <text x="16" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#64748b">AGENT GENERATION STREAM</text>
-    <circle cx="530" cy="18" r="4" fill="#10b981" filter="url(#glow3)" />
-    <text x="510" y="22" font-family="'JetBrains Mono', monospace" font-size="9" fill="#10b981">62 tps</text>
+  <!-- Right: Cartoon Multi-Agent Pipeline & Speech Bubbles -->
+  <g transform="translate(230, 75)">
+    <!-- Main Box -->
+    <rect x="5" y="5" width="335" height="265" rx="18" fill="#000000" />
+    <rect width="335" height="265" rx="16" fill="#ffffff" stroke="#000000" stroke-width="4.5" />
 
-    <!-- Chat Prompt / Output bubbles -->
-    <rect x="16" y="35" width="528" height="34" rx="6" fill="#1e293b" />
-    <text x="28" y="56" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">
-      &gt; User: "Analyze quarterly user retention trends and generate SQL query"
+    <text x="20" y="32" font-family="'Fredoka', sans-serif" font-size="15" font-weight="bold" fill="#000000">
+      Multi-Agent Pipeline Graph ⚡
     </text>
 
-    <text x="16" y="90" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f1f5f9">
-      🤖 Agent: Analyzing 45,000 cohort events... Identified 32% retention uplift in Cohort Q3.
-    </text>
-    <text x="16" y="108" font-family="'JetBrains Mono', monospace" font-size="10" fill="#a855f7">
-      SELECT cohort_month, COUNT(DISTINCT user_id) as retained_users FROM events GROUP BY 1;
-    </text>
+    <!-- Node 1: User Request Bubble -->
+    <g transform="translate(20, 50)">
+      <rect width="295" height="42" rx="12" fill="#fef08a" stroke="#000000" stroke-width="2.5" />
+      <text x="14" y="26" font-family="'Fredoka', sans-serif" font-size="11" font-weight="bold" fill="#000000">
+        💬 User: "Generate summary &amp; code diagram!"
+      </text>
+    </g>
+
+    <!-- Flow Arrow -->
+    <path d="M 165 95 L 165 115" stroke="#000000" stroke-width="4" marker-end="url(#arrow)" />
+
+    <!-- 3 Cartoon Pipeline Steps -->
+    <g transform="translate(20, 115)">
+      <!-- Step A -->
+      <rect x="0" y="0" width="88" height="58" rx="10" fill="#bae6fd" stroke="#000000" stroke-width="2.5" />
+      <text x="44" y="25" font-family="'Fredoka', sans-serif" font-size="11" font-weight="bold" fill="#000000" text-anchor="middle">1. RETRIEVE</text>
+      <text x="44" y="44" font-family="'Fredoka', sans-serif" font-size="9" fill="#0369a1" text-anchor="middle">📚 10k Docs</text>
+
+      <!-- Step B (Active) -->
+      <rect x="103" y="0" width="88" height="58" rx="10" fill="#fbcfe8" stroke="#000000" stroke-width="3" />
+      <text x="147" y="25" font-family="'Fredoka', sans-serif" font-size="11" font-weight="bold" fill="#000000" text-anchor="middle">2. REASON</text>
+      <text x="147" y="44" font-family="'Fredoka', sans-serif" font-size="9" fill="#be185d" text-anchor="middle">✨ Thinking...</text>
+
+      <!-- Step C -->
+      <rect x="206" y="0" width="88" height="58" rx="10" fill="#bbf7d0" stroke="#000000" stroke-width="2.5" />
+      <text x="250" y="25" font-family="'Fredoka', sans-serif" font-size="11" font-weight="bold" fill="#000000" text-anchor="middle">3. SOLVE</text>
+      <text x="250" y="44" font-family="'Fredoka', sans-serif" font-size="9" fill="#15803d" text-anchor="middle">🎯 Done 0.2s</text>
+    </g>
+
+    <!-- Agent Output Box -->
+    <g transform="translate(20, 190)">
+      <rect width="295" height="60" rx="10" fill="#f8fafc" stroke="#000000" stroke-width="2.5" />
+      <text x="14" y="24" font-family="'Fredoka', sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+        🎉 Agent: "Boom! Query optimized by 85%!"
+      </text>
+      <text x="14" y="44" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">
+        SELECT * FROM victory WHERE state = 'awesome';
+      </text>
+    </g>
   </g>
 </svg>
-

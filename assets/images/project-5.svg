@@ -1,111 +1,105 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#020617" />
-    </linearGradient>
-    <linearGradient id="prodGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3b82f6" />
-      <stop offset="100%" stop-color="#1d4ed8" />
-    </linearGradient>
-    <linearGradient id="prodGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#8b5cf6" />
-      <stop offset="100%" stop-color="#6d28d9" />
-    </linearGradient>
-    <filter id="glow5" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-  </defs>
+  <!-- Comic Shadow -->
+  <rect x="14" y="14" width="576" height="356" rx="24" fill="#000000" />
+  <rect x="8" y="8" width="576" height="356" rx="22" fill="#18181b" stroke="#000000" stroke-width="5" />
 
-  <rect width="600" height="380" rx="16" fill="url(#bg5)" stroke="#1e293b" stroke-width="2" />
+  <!-- Window Header Bar (Chunky Cyan) -->
+  <path d="M 8 30 C 8 18, 18 8, 30 8 L 562 8 C 574 8, 584 18, 584 30 L 584 52 L 8 52 Z" fill="#38bdf8" stroke="#000000" stroke-width="5" />
 
-  <!-- Window Header -->
-  <rect x="0" y="0" width="600" height="42" rx="16" fill="#0b0f19" />
-  <rect x="0" y="32" width="600" height="10" fill="#0b0f19" />
-  <line x1="0" y1="42" x2="600" y2="42" stroke="#1e293b" stroke-width="1" />
+  <circle cx="34" cy="30" r="9" fill="#f43f5e" stroke="#000000" stroke-width="3" />
+  <circle cx="60" cy="30" r="9" fill="#facc15" stroke="#000000" stroke-width="3" />
+  <circle cx="86" cy="30" r="9" fill="#4ade80" stroke="#000000" stroke-width="3" />
 
-  <!-- Dots -->
-  <circle cx="24" cy="21" r="5" fill="#ef4444" />
-  <circle cx="42" cy="21" r="5" fill="#f59e0b" />
-  <circle cx="60" cy="21" r="5" fill="#10b981" />
-
-  <text x="300" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">
-    ShopStream // Headless Next.js Storefront
+  <rect x="180" y="18" width="240" height="26" rx="13" fill="#ffffff" stroke="#000000" stroke-width="3" />
+  <text x="300" y="36" font-family="'Fredoka', sans-serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">
+    🛍️ ShopStream Candy Store
   </text>
-  <rect x="495" y="12" width="85" height="20" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1" />
-  <text x="537" y="25" font-family="'JetBrains Mono', monospace" font-size="9" fill="#38bdf8" text-anchor="middle">🛒 Cart: 3 items</text>
 
-  <!-- Left: Featured Product Card Mock -->
-  <g transform="translate(30, 60)">
-    <rect width="260" height="290" rx="12" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
-    <!-- Product visual area -->
-    <rect x="12" y="12" width="236" height="140" rx="8" fill="url(#prodGrad1)" />
-    <!-- Product Graphic (Futuristic Headphones) -->
-    <circle cx="130" cy="75" r="32" fill="none" stroke="#fff" stroke-width="5" />
-    <rect x="90" y="65" width="16" height="28" rx="6" fill="#60a5fa" />
-    <rect x="154" y="65" width="16" height="28" rx="6" fill="#60a5fa" />
-    <circle cx="130" cy="75" r="10" fill="#fff" opacity="0.3" />
+  <!-- Left: Featured Product (Cool Cartoon Sneaker with speed lines) -->
+  <g transform="translate(30, 75)">
+    <rect x="5" y="5" width="250" height="265" rx="18" fill="#000000" />
+    <rect width="250" height="265" rx="16" fill="#fbcfe8" stroke="#000000" stroke-width="4.5" />
 
-    <text x="16" y="180" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="bold" fill="#f8fafc">
-      AuraPulse Spatial Headset
-    </text>
-    <text x="16" y="200" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#94a3b8">
-      Active ANC • Hi-Res Wireless • 40h Battery
-    </text>
+    <!-- Comic Badge -->
+    <g transform="translate(15, 15) rotate(-6)">
+      <rect width="90" height="26" rx="8" fill="#facc15" stroke="#000000" stroke-width="2.5" />
+      <text x="45" y="18" font-family="'Fredoka', sans-serif" font-size="11" font-weight="bold" fill="#000000" text-anchor="middle">HOT DROP 🔥</text>
+    </g>
 
-    <!-- Star rating -->
-    <text x="16" y="222" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f59e0b">
-      ★★★★★ (4.9 / 1.2k reviews)
-    </text>
+    <!-- Cartoon Sneaker Illustration -->
+    <g transform="translate(25, 55)">
+      <!-- Speed lines -->
+      <line x1="15" y1="50" x2="45" y2="50" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+      <line x1="5" y1="70" x2="35" y2="70" stroke="#000000" stroke-width="3" stroke-linecap="round" />
+      
+      <!-- Sneaker Sole -->
+      <path d="M 35 110 L 175 110 C 185 110, 195 100, 185 85 L 170 85 L 160 50 L 115 50 L 100 85 L 45 85 C 35 85, 30 95, 35 110 Z" fill="#ffffff" stroke="#000000" stroke-width="4.5" />
+      <!-- Sneaker Upper (Punchy Pink & Cyan) -->
+      <path d="M 45 85 L 100 85 L 115 50 L 160 50 L 170 85 Z" fill="#f43f5e" stroke="#000000" stroke-width="3.5" />
+      <circle cx="130" cy="70" r="10" fill="#facc15" stroke="#000000" stroke-width="2" />
+      <text x="130" y="74" font-family="'Fredoka', sans-serif" font-size="9" font-weight="bold" fill="#000000" text-anchor="middle">⚡</text>
+      <!-- Laces -->
+      <line x1="120" y1="58" x2="145" y2="58" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <line x1="125" y1="65" x2="148" y2="65" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    </g>
 
-    <text x="16" y="255" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="bold" fill="#38bdf8">
-      $349.00
+    <!-- Product Info -->
+    <text x="20" y="180" font-family="'Fredoka', sans-serif" font-size="16" font-weight="bold" fill="#000000">
+      Air Cyber Retro Kicks
     </text>
-    <rect x="140" y="235" width="108" height="32" rx="6" fill="#2563eb" />
-    <text x="194" y="255" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">
-      Add to Bag
-    </text>
-  </g>
-
-  <!-- Right: Secondary Product & Checkout Preview -->
-  <g transform="translate(310, 60)">
-    <!-- Top Mini Product -->
-    <rect width="260" height="135" rx="12" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
-    <rect x="12" y="12" width="80" height="110" rx="8" fill="url(#prodGrad2)" />
-    <circle cx="52" cy="65" r="20" fill="#a78bfa" opacity="0.5" />
-    <text x="52" y="70" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">⚡</text>
-
-    <text x="104" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="bold" fill="#f8fafc">
-      CyberKey Mech Board
-    </text>
-    <text x="104" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#94a3b8">
-      Hot-swappable RGB OLED
-    </text>
-    <text x="104" y="85" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="bold" fill="#a855f7">
-      $189.00
-    </text>
-    <rect x="104" y="98" width="80" height="24" rx="4" fill="#7c3aed" />
-    <text x="144" y="114" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle">
-      Quick Buy
+    <text x="20" y="200" font-family="'Fredoka', sans-serif" font-size="12" fill="#713f12">
+      ⭐⭐⭐⭐⭐ (2,400 Reviews)
     </text>
 
-    <!-- Bottom Checkout Glass Card -->
-    <g transform="translate(0, 150)">
-      <rect width="260" height="140" rx="12" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
-      <text x="16" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#64748b">
-        CHECKOUT // STRIPE EMBED
+    <!-- Price and Add to Cart -->
+    <g transform="translate(18, 215)">
+      <text x="5" y="26" font-family="'Fredoka', sans-serif" font-size="22" font-weight="bold" fill="#000000">
+        $189
       </text>
-
-      <rect x="16" y="38" width="228" height="32" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
-      <text x="28" y="58" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">•••• •••• •••• 4242</text>
-      <text x="210" y="58" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10b981">VALID</text>
-
-      <rect x="16" y="82" width="228" height="38" rx="6" fill="#10b981" />
-      <text x="130" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">
-        Pay $538.00 (Instant Auth)
+      <rect x="95" y="0" width="120" height="38" rx="10" fill="#000000" />
+      <rect x="92" y="-3" width="120" height="38" rx="10" fill="#facc15" stroke="#000000" stroke-width="3" />
+      <text x="152" y="22" font-family="'Fredoka', sans-serif" font-size="12" font-weight="bold" fill="#000000" text-anchor="middle">
+        ADD TO BAG 🛒
       </text>
     </g>
   </g>
-</svg>
 
+  <!-- Right: Cartoon Checkout & Cart Counter -->
+  <g transform="translate(305, 75)">
+    <!-- Cart Counter Card -->
+    <rect x="5" y="5" width="260" height="120" rx="18" fill="#000000" />
+    <rect width="260" height="120" rx="16" fill="#fef08a" stroke="#000000" stroke-width="4.5" />
+
+    <text x="20" y="32" font-family="'Fredoka', sans-serif" font-size="15" font-weight="bold" fill="#000000">
+      Instant Checkout ⚡
+    </text>
+    <text x="20" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#713f12">
+      Next.js Server Action + Stripe 💳
+    </text>
+
+    <rect x="20" y="68" width="220" height="36" rx="10" fill="#4ade80" stroke="#000000" stroke-width="3" />
+    <text x="130" y="91" font-family="'Fredoka', sans-serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">
+      1-CLICK BUY (0.3s) ✨
+    </text>
+
+    <!-- Bottom Confetti / Discount Card -->
+    <g transform="translate(0, 140)">
+      <rect x="5" y="5" width="260" height="125" rx="18" fill="#000000" />
+      <rect width="260" height="125" rx="16" fill="#bae6fd" stroke="#000000" stroke-width="4.5" />
+
+      <text x="20" y="32" font-family="'Fredoka', sans-serif" font-size="14" font-weight="bold" fill="#000000">
+        🎉 Promo Applied: WOW100
+      </text>
+      <text x="20" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#0369a1">
+        Free Worldwide Express Shipping!
+      </text>
+
+      <g transform="translate(20, 68)">
+        <rect width="220" height="38" rx="10" fill="#ffffff" stroke="#000000" stroke-width="2.5" />
+        <text x="15" y="24" font-family="'Fredoka', sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+          ✔ 100/100 Lighthouse Performance
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

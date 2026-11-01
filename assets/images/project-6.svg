@@ -1,101 +1,111 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
-  <defs>
-    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b1329" />
-      <stop offset="100%" stop-color="#020617" />
-    </linearGradient>
-    <filter id="glow6" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-  </defs>
+  <!-- Comic Shadow -->
+  <rect x="14" y="14" width="576" height="356" rx="24" fill="#000000" />
+  <rect x="8" y="8" width="576" height="356" rx="22" fill="#1e1b4b" stroke="#000000" stroke-width="5" />
 
-  <rect width="600" height="380" rx="16" fill="url(#bg6)" stroke="#1e293b" stroke-width="2" />
+  <!-- Window Header Bar (Chunky Yellow) -->
+  <path d="M 8 30 C 8 18, 18 8, 30 8 L 562 8 C 574 8, 584 18, 584 30 L 584 52 L 8 52 Z" fill="#facc15" stroke="#000000" stroke-width="5" />
 
-  <!-- Window Header -->
-  <rect x="0" y="0" width="600" height="42" rx="16" fill="#0f172a" />
-  <rect x="0" y="32" width="600" height="10" fill="#0f172a" />
-  <line x1="0" y1="42" x2="600" y2="42" stroke="#1e293b" stroke-width="1" />
+  <circle cx="34" cy="30" r="9" fill="#f43f5e" stroke="#000000" stroke-width="3" />
+  <circle cx="60" cy="30" r="9" fill="#38bdf8" stroke="#000000" stroke-width="3" />
+  <circle cx="86" cy="30" r="9" fill="#4ade80" stroke="#000000" stroke-width="3" />
 
-  <circle cx="24" cy="21" r="5" fill="#ef4444" />
-  <circle cx="42" cy="21" r="5" fill="#f59e0b" />
-  <circle cx="60" cy="21" r="5" fill="#10b981" />
-
-  <text x="300" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle">
-    TaskForge // Sprint 42 Board (Q4 Release)
+  <rect x="180" y="18" width="240" height="26" rx="13" fill="#ffffff" stroke="#000000" stroke-width="3" />
+  <text x="300" y="36" font-family="'Fredoka', sans-serif" font-size="13" font-weight="bold" fill="#000000" text-anchor="middle">
+    📋 TaskForge Sprint Party
   </text>
-  <rect x="490" y="12" width="90" height="20" rx="10" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1" />
-  <text x="535" y="25" font-family="'JetBrains Mono', monospace" font-size="9" fill="#34d399" text-anchor="middle">SPRINT ON TRACK</text>
 
-  <!-- 3 Kanban Columns -->
-  <!-- Col 1: Backlog -->
-  <g transform="translate(20, 56)">
-    <rect width="170" height="304" rx="10" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
-    <rect x="12" y="12" width="8" height="8" rx="2" fill="#64748b" />
-    <text x="26" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#94a3b8">TODO (3)</text>
-    
-    <!-- Card 1 -->
-    <rect x="12" y="34" width="146" height="74" rx="8" fill="#1e293b" />
-    <rect x="20" y="44" width="46" height="14" rx="4" fill="#3b82f6" fill-opacity="0.3" />
-    <text x="43" y="54" font-family="'JetBrains Mono', monospace" font-size="8" fill="#60a5fa" text-anchor="middle">INFRA</text>
-    <text x="20" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#f1f5f9">Upgrade Postgres v16</text>
-    <circle cx="140" cy="92" r="7" fill="#8b5cf6" />
-    <text x="140" y="95" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" fill="#fff" text-anchor="middle">JD</text>
+  <!-- 3 Cartoon Kanban Sticky Note Columns -->
+  <!-- Col 1: Todo (Pink Sticky Notes) -->
+  <g transform="translate(25, 70)">
+    <rect x="4" y="4" width="160" height="270" rx="14" fill="#000000" />
+    <rect width="160" height="270" rx="12" fill="#fbcfe8" stroke="#000000" stroke-width="4" />
 
-    <!-- Card 2 -->
-    <rect x="12" y="118" width="146" height="74" rx="8" fill="#1e293b" />
-    <rect x="20" y="128" width="46" height="14" rx="4" fill="#a855f7" fill-opacity="0.3" />
-    <text x="43" y="138" font-family="'JetBrains Mono', monospace" font-size="8" fill="#c084fc" text-anchor="middle">UI/UX</text>
-    <text x="20" y="158" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#f1f5f9">Dark mode contrast audit</text>
-    <circle cx="140" cy="176" r="7" fill="#ec4899" />
-    <text x="140" y="179" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" fill="#fff" text-anchor="middle">EL</text>
+    <rect x="12" y="12" width="136" height="28" rx="8" fill="#ffffff" stroke="#000000" stroke-width="2.5" />
+    <text x="80" y="31" font-family="'Fredoka', sans-serif" font-size="12" font-weight="bold" fill="#000000" text-anchor="middle">📌 TO DO (2)</text>
+
+    <!-- Sticky 1 -->
+    <g transform="translate(12, 52) rotate(-2)">
+      <rect x="3" y="3" width="136" height="75" rx="8" fill="#000000" />
+      <rect width="136" height="75" rx="8" fill="#fef08a" stroke="#000000" stroke-width="3" />
+      <text x="10" y="24" font-family="'Fredoka', sans-serif" font-size="11" font-weight="bold" fill="#000000">Build New UI ✨</text>
+      <text x="10" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#713f12">Cartoon styling pass</text>
+      <circle cx="115" cy="56" r="10" fill="#38bdf8" stroke="#000000" stroke-width="2" />
+      <text x="115" y="60" font-family="'Fredoka', sans-serif" font-size="9" font-weight="bold" fill="#000000" text-anchor="middle">JD</text>
+    </g>
+
+    <!-- Sticky 2 -->
+    <g transform="translate(12, 145) rotate(3)">
+      <rect x="3" y="3" width="136" height="75" rx="8" fill="#000000" />
+      <rect width="136" height="75" rx="8" fill="#bae6fd" stroke="#000000" stroke-width="3" />
+      <text x="10" y="24" font-family="'Fredoka', sans-serif" font-size="11" font-weight="bold" fill="#000000">Speed Boost 🏎️</text>
+      <text x="10" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#0369a1">Fast API caching</text>
+      <circle cx="115" cy="56" r="10" fill="#f43f5e" stroke="#000000" stroke-width="2" />
+      <text x="115" y="60" font-family="'Fredoka', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">AL</text>
+    </g>
   </g>
 
-  <!-- Col 2: In Progress -->
-  <g transform="translate(210, 56)">
-    <rect width="180" height="304" rx="10" fill="#0b0f19" stroke="#3b82f6" stroke-width="1.5" />
-    <rect x="12" y="12" width="8" height="8" rx="2" fill="#3b82f6" />
-    <text x="26" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#38bdf8">IN PROGRESS (2)</text>
-    
-    <!-- Active Card (Highlighted) -->
-    <rect x="12" y="34" width="156" height="96" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="1" filter="url(#glow6)" />
-    <rect x="20" y="44" width="56" height="14" rx="4" fill="#ef4444" fill-opacity="0.3" />
-    <text x="48" y="54" font-family="'JetBrains Mono', monospace" font-size="8" fill="#f87171" text-anchor="middle">P0 CRITICAL</text>
-    <text x="20" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#f8fafc">OAuth2 Multi-Tenant Auth</text>
-    
-    <!-- Progress bar in card -->
-    <rect x="20" y="88" width="140" height="6" rx="3" fill="#334155" />
-    <rect x="20" y="88" width="105" height="6" rx="3" fill="#38bdf8" />
-    <text x="20" y="112" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94a3b8">75% complete</text>
-    <circle cx="150" cy="112" r="7" fill="#06b6d4" />
-    <text x="150" y="115" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" fill="#0f172a" font-weight="bold" text-anchor="middle">JD</text>
+  <!-- Col 2: Doing (Cyan Column) -->
+  <g transform="translate(210, 70)">
+    <rect x="4" y="4" width="170" height="270" rx="14" fill="#000000" />
+    <rect width="170" height="270" rx="12" fill="#bae6fd" stroke="#000000" stroke-width="4" />
 
-    <!-- Card 2 -->
-    <rect x="12" y="140" width="156" height="74" rx="8" fill="#1e293b" />
-    <rect x="20" y="150" width="46" height="14" rx="4" fill="#10b981" fill-opacity="0.3" />
-    <text x="43" y="160" font-family="'JetBrains Mono', monospace" font-size="8" fill="#34d399" text-anchor="middle">API</text>
-    <text x="20" y="180" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#f1f5f9">Rate limiting middleware</text>
+    <rect x="12" y="12" width="146" height="28" rx="8" fill="#ffffff" stroke="#000000" stroke-width="2.5" />
+    <text x="85" y="31" font-family="'Fredoka', sans-serif" font-size="12" font-weight="bold" fill="#000000" text-anchor="middle">⚡ IN PROGRESS (1)</text>
+
+    <!-- Active Mega Sticky Note -->
+    <g transform="translate(12, 52)">
+      <rect x="4" y="4" width="146" height="110" rx="10" fill="#000000" />
+      <rect width="146" height="110" rx="10" fill="#fef08a" stroke="#000000" stroke-width="3.5" />
+      
+      <rect x="10" y="10" width="70" height="20" rx="6" fill="#f43f5e" stroke="#000000" stroke-width="2" />
+      <text x="45" y="24" font-family="'Fredoka', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">P0 TOP PRIO</text>
+
+      <text x="10" y="48" font-family="'Fredoka', sans-serif" font-size="12" font-weight="bold" fill="#000000">OAuth2 Live Sync 🔐</text>
+      
+      <!-- Progress Bar -->
+      <rect x="10" y="62" width="126" height="14" rx="7" fill="#ffffff" stroke="#000000" stroke-width="2" />
+      <rect x="12" y="64" width="100" height="10" rx="5" fill="#4ade80" />
+      <text x="10" y="94" font-family="'Fredoka', sans-serif" font-size="10" font-weight="bold" fill="#15803d">85% Complete!</text>
+
+      <circle cx="125" cy="92" r="11" fill="#facc15" stroke="#000000" stroke-width="2" />
+      <text x="125" y="96" font-family="'Fredoka', sans-serif" font-size="9" font-weight="bold" fill="#000000" text-anchor="middle">JD</text>
+    </g>
+
+    <!-- Trophy Banner below -->
+    <g transform="translate(12, 185) rotate(-3)">
+      <rect width="146" height="65" rx="10" fill="#facc15" stroke="#000000" stroke-width="3" />
+      <text x="73" y="28" font-family="'Fredoka', sans-serif" font-size="12" font-weight="bold" fill="#000000" text-anchor="middle">🏆 SPRINT 42</text>
+      <text x="73" y="48" font-family="'Fredoka', sans-serif" font-size="11" font-weight="bold" fill="#b45309" text-anchor="middle">ON TRACK! 🔥</text>
+    </g>
   </g>
 
-  <!-- Col 3: Done -->
-  <g transform="translate(410, 56)">
-    <rect width="170" height="304" rx="10" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
-    <rect x="12" y="12" width="8" height="8" rx="2" fill="#10b981" />
-    <text x="26" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" fill="#34d399">DONE (6)</text>
-    
-    <!-- Card Done 1 -->
-    <rect x="12" y="34" width="146" height="66" rx="8" fill="#1e293b" opacity="0.8" />
-    <text x="20" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#94a3b8" text-decoration="line-through">
-      Stripe Webhook handler
-    </text>
-    <text x="20" y="75" font-family="'JetBrains Mono', monospace" font-size="8" fill="#10b981">✓ Merged to main</text>
+  <!-- Col 3: Done (Mint Green Column) -->
+  <g transform="translate(405, 70)">
+    <rect x="4" y="4" width="165" height="270" rx="14" fill="#000000" />
+    <rect width="165" height="270" rx="12" fill="#bbf7d0" stroke="#000000" stroke-width="4" />
 
-    <!-- Card Done 2 -->
-    <rect x="12" y="110" width="146" height="66" rx="8" fill="#1e293b" opacity="0.8" />
-    <text x="20" y="131" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#94a3b8" text-decoration="line-through">
-      Redis Cache layer
-    </text>
-    <text x="20" y="151" font-family="'JetBrains Mono', monospace" font-size="8" fill="#10b981">✓ Benchmark 2ms</text>
+    <rect x="12" y="12" width="141" height="28" rx="8" fill="#ffffff" stroke="#000000" stroke-width="2.5" />
+    <text x="82" y="31" font-family="'Fredoka', sans-serif" font-size="12" font-weight="bold" fill="#000000" text-anchor="middle">🎉 DONE (5)</text>
+
+    <!-- Done 1 -->
+    <g transform="translate(12, 52)">
+      <rect width="141" height="65" rx="8" fill="#ffffff" stroke="#000000" stroke-width="2.5" />
+      <text x="10" y="26" font-family="'Fredoka', sans-serif" font-size="11" font-weight="bold" fill="#15803d">✔ Redis Cache</text>
+      <text x="10" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#64748b">Super snappy response</text>
+    </g>
+
+    <!-- Done 2 -->
+    <g transform="translate(12, 130)">
+      <rect width="141" height="65" rx="8" fill="#ffffff" stroke="#000000" stroke-width="2.5" />
+      <text x="10" y="26" font-family="'Fredoka', sans-serif" font-size="11" font-weight="bold" fill="#15803d">✔ Stripe Webhooks</text>
+      <text x="10" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" fill="#64748b">Auto receipt emails</text>
+    </g>
+
+    <!-- Star Confetti Sticker -->
+    <g transform="translate(30, 210) rotate(8)">
+      <rect width="105" height="36" rx="8" fill="#f43f5e" stroke="#000000" stroke-width="2.5" />
+      <text x="52" y="24" font-family="'Fredoka', sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">ALL CLEAR ⭐</text>
+    </g>
   </g>
 </svg>
-
