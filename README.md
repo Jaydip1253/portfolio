@@ -109,3 +109,4 @@ Then visit `http://localhost:3000` in your browser.
 
 ## 📜 License
 MIT License. Feel free to use this template for your own developer portfolio!
+

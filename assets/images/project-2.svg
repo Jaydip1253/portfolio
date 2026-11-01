@@ -122,3 +122,4 @@
   <text x="155" y="342" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">ready in 184ms. 3 peers connected. WebSocket synced.</text>
   <rect x="510" y="332" width="6" height="12" fill="#00f2fe" filter="url(#glow2)" />
 </svg>
+
