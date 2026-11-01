@@ -19,7 +19,7 @@ const portfolioData = {
     },
     location: "India (Open to Remote Worldwide)",
     email: "jaydip.dev@example.com", // Replace with your actual email
-    github: "https://github.com/jaydip-dev", // Replace with your actual link
+    github: "https://github.com/Jaydip1253", // Replace with your actual link
     linkedin: "https://linkedin.com/in/jaydip-dev", // Replace with your actual link
     instagram: "https://instagram.com/jaydip_codes", // Replace with your actual link
     twitter: "https://twitter.com/jaydip_dev",
@@ -316,7 +316,7 @@ const portfolioData = {
       thumbnail: "assets/images/project-1.svg",
       technologies: ["React", "TypeScript", "Node.js", "Docker", "PostgreSQL", "Tailwind CSS"],
       liveUrl: "https://example.com/cloudpulse-demo",
-      githubUrl: "https://github.com/jaydip-dev/cloudpulse",
+      githubUrl: "https://github.com/Jaydip1253/cloudpulse",
       featured: true,
       stats: {
         metric: "< 120ms",
@@ -333,7 +333,7 @@ const portfolioData = {
       thumbnail: "assets/images/project-2.svg",
       technologies: ["Next.js", "TypeScript", "WebSockets", "Monaco Editor", "Tailwind CSS", "Redis"],
       liveUrl: "https://example.com/devsync-demo",
-      githubUrl: "https://github.com/jaydip-dev/devsync",
+      githubUrl: "https://github.com/Jaydip1253/devsync",
       featured: true,
       stats: {
         metric: "0ms Conflicts",
@@ -350,7 +350,7 @@ const portfolioData = {
       thumbnail: "assets/images/project-3.svg",
       technologies: ["Python", "FastAPI", "React", "Vector Embeddings", "LangChain", "Tailwind CSS"],
       liveUrl: "https://example.com/nexus-ai-demo",
-      githubUrl: "https://github.com/jaydip-dev/nexus-ai",
+      githubUrl: "https://github.com/Jaydip1253/nexus-ai",
       featured: true,
       stats: {
         metric: "98.5%",
@@ -367,7 +367,7 @@ const portfolioData = {
       thumbnail: "assets/images/project-4.svg",
       technologies: ["React", "Redux Toolkit", "WebSockets", "Chart.js", "Tailwind CSS", "Node.js"],
       liveUrl: "https://example.com/cryptoorbit-demo",
-      githubUrl: "https://github.com/jaydip-dev/cryptoorbit",
+      githubUrl: "https://github.com/Jaydip1253/cryptoorbit",
       featured: false,
       stats: {
         metric: "60 FPS",
@@ -384,7 +384,7 @@ const portfolioData = {
       thumbnail: "assets/images/project-5.svg",
       technologies: ["Next.js 14", "Stripe API", "PostgreSQL", "Prisma ORM", "Tailwind CSS"],
       liveUrl: "https://example.com/shopstream-demo",
-      githubUrl: "https://github.com/jaydip-dev/shopstream",
+      githubUrl: "https://github.com/Jaydip1253/shopstream",
       featured: false,
       stats: {
         metric: "100/100",
@@ -401,7 +401,7 @@ const portfolioData = {
       thumbnail: "assets/images/project-6.svg",
       technologies: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
       liveUrl: "https://example.com/taskforge-demo",
-      githubUrl: "https://github.com/jaydip-dev/taskforge",
+      githubUrl: "https://github.com/Jaydip1253/taskforge",
       featured: false,
       stats: {
         metric: "10k+",
