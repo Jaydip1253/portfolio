@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Primary Meta Tags -->
+  <title>Jaydip | Software Developer & Full Stack Engineer</title>
+  <meta name="title" content="Jaydip | Software Developer & Full Stack Engineer">
+  <meta name="description" content="Personal portfolio of Jaydip, a passionate Software Developer building modern, scalable, and user-friendly web and mobile experiences. Explore projects, technical skills, and experience.">
+  <meta name="keywords" content="Jaydip, Software Developer, Full Stack Developer, Frontend, Backend, React, Node.js, TypeScript, Portfolio, Web Developer">
+  <meta name="author" content="Jaydip">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Reading Progress -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Interactive Background Canvas & Ambient Lighting -->
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+  <div class="ambient-spotlight" aria-hidden="true"></div>
+  <div class="ambient-glow-top" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       Site Header & Navigation
+       ========================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Jaydip Portfolio Home">
+        <div class="logo-badge">
+          <img src="assets/icons/favicon.svg" alt="Jaydip Logo">
+        </div>
+        <span>Jaydip<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="desktop-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls: Theme Picker, Audio FX & Mobile Hamburger -->
+      <div class="header-actions">
+        <!-- Accent Theme Picker -->
+        <div class="theme-picker-container">
+          <button id="theme-toggle-btn" class="theme-btn" title="Change Theme Accent" aria-label="Theme switcher">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </button>
+          <div id="theme-dropdown" class="theme-dropdown" role="menu">
+            <button class="theme-option" data-set-theme="default">
+              <span class="color-dot" style="background: linear-gradient(135deg, #00f2fe, #3b82f6);"></span>
+              <span>Cyber Cyan</span>
+            </button>
+            <button class="theme-option" data-set-theme="violet">
+              <span class="color-dot" style="background: linear-gradient(135deg, #c084fc, #ec4899);"></span>
+              <span>Neon Violet</span>
+            </button>
+            <button class="theme-option" data-set-theme="emerald">
+              <span class="color-dot" style="background: linear-gradient(135deg, #10b981, #06b6d4);"></span>
+              <span>Matrix Emerald</span>
+            </button>
+            <button class="theme-option" data-set-theme="sapphire">
+              <span class="color-dot" style="background: linear-gradient(135deg, #38bdf8, #2563eb);"></span>
+              <span>Hyper Sapphire</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Synthesized Audio FX Toggle -->
+        <button id="audio-toggle-btn" class="audio-toggle-btn" title="Toggle Futuristic Audio Cues" aria-label="Toggle Audio Effects">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+
+        <!-- Mobile Drawer Toggle Button -->
+        <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-links">
+      <li class="mobile-nav-item"><a href="#hero">Home</a></li>
+      <li class="mobile-nav-item"><a href="#about">About Me</a></li>
+      <li class="mobile-nav-item"><a href="#skills">Skills &amp; Tech</a></li>
+      <li class="mobile-nav-item"><a href="#projects">Featured Projects</a></li>
+      <li class="mobile-nav-item"><a href="#experience">Experience &amp; Education</a></li>
+      <li class="mobile-nav-item"><a href="#contact">Contact Me</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <p style="color: var(--text-dim); font-size: 0.85rem; margin-bottom: 1rem;">Let's build something extraordinary together.</p>
+      <a href="#contact" class="btn-primary" style="width: 100%; justify-content: center;">Get in Touch</a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       Hero Section
+       ========================================================================= -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-grid">
+      <!-- Left Hero Content -->
+      <div class="hero-content">
+        <!-- Live Status Pill -->
+        <div class="hero-status-pill">
+          <span class="status-dot"></span>
+          <span>Available for Full-time Roles &amp; Freelance</span>
+        </div>
+
+        <!-- Greeting & Headline -->
+        <h1 class="hero-greeting">
+          Hi, I'm Jaydip <span class="wave">👋</span>
+        </h1>
+
+        <h2 class="hero-headline">
+          Software Developer <span style="color: var(--text-dim); margin: 0 0.25rem;">|</span> <span class="highlight">Building Digital Experiences</span>
+        </h2>
+
+        <!-- Short Introduction -->
+        <p class="hero-description">
+          I design and engineer high-performance web applications, resilient backend architectures, and delightful interactive user interfaces. Passionate about clean code, modern stacks, and turning complex challenges into seamless software.
+        </p>
+
+        <!-- Hero Buttons -->
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn-primary">
+            <span>View My Work</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <i class="fa-regular fa-paper-plane"></i>
+            <span>Contact Me</span>
+          </a>
+        </div>
+
+        <!-- Social Media Icons (GitHub, LinkedIn, Instagram) -->
+        <div class="hero-socials">
+          <a href="https://github.com/jaydip-dev" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/jaydip-dev" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://instagram.com/jaydip_codes" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Instagram Profile" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="mailto:jaydip.dev@example.com" class="social-icon-btn" title="Direct Email" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Hero Visual: Interactive Code Terminal & Floating Badges -->
+      <div class="hero-visual">
+        <div class="code-terminal-card">
+          <!-- Terminal Header -->
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+            </div>
+            <div class="terminal-tab">
+              <i class="fa-solid fa-code"></i>
+              <span>Jaydip.ts</span>
+            </div>
+            <button id="terminal-copy-btn" class="terminal-copy-btn" title="Copy snippet" aria-label="Copy code">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <!-- Code Body Container -->
+          <div id="terminal-code-body" class="terminal-body">
+            <!-- Populated dynamically by main.js -->
+          </div>
+        </div>
+
+        <!-- Floating Holographic Tech Badges -->
+        <div class="floating-badge badge-react">
+          <i class="fa-brands fa-react"></i> React 19 / Next.js
+        </div>
+        <div class="floating-badge badge-ts">
+          <i class="fa-solid fa-bolt"></i> TypeScript &amp; Python
+        </div>
+        <div class="floating-badge badge-node">
+          <i class="fa-brands fa-node-js"></i> Node.js &amp; Microservices
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       About Me Section
+       ========================================================================= -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <div class="section-pill">
+          <i class="fa-regular fa-user"></i> About Me
+        </div>
+        <h2 class="section-title">
+          Engineering with Passion, <span class="gradient-text">Purpose &amp; Precision</span>
+        </h2>
+        <p class="section-subtitle">
+          Get to know my journey, my technical vision, and what drives my pursuit of software craftsmanship.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Profile Image with High-Tech Frame -->
+        <div class="about-image-wrapper fade-in-up">
+          <div class="profile-card">
+            <img src="assets/images/avatar.svg" alt="Jaydip Software Developer Illustration" class="profile-img">
+            <div class="profile-status-chip">
+              <span class="status-dot"></span>
+              <span>Jaydip • Software Developer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Content & Bio -->
+        <div class="about-content fade-in-up">
+          <h3 class="about-intro-title">
+            Passionate Developer Building Scalable, Modern &amp; <span class="gradient-text">Human-Centered Apps</span>
+          </h3>
+
+          <div id="about-bio-container">
+            <!-- Rendered from portfolioData in data.js -->
+          </div>
+
+          <!-- Goals & Tech Passion Card -->
+          <div class="about-goals-card">
+            <h4 class="about-goals-title">
+              <i class="fa-solid fa-compass"></i> Professional Vision &amp; Goals
+            </h4>
+            <p id="about-goals-text" class="about-goals-text">
+              <!-- Rendered from portfolioData in data.js -->
+            </p>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+            <a href="#projects" class="btn-primary">
+              <i class="fa-solid fa-laptop-code"></i> Explore Portfolio
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <i class="fa-solid fa-file-arrow-down"></i> Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Numbers Bar -->
+      <div id="stats-grid" class="stats-grid">
+        <!-- Rendered from portfolioData in data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Skills & Technologies Section
+       ========================================================================= -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <div class="section-pill">
+          <i class="fa-solid fa-layer-group"></i> Technical Arsenal
+        </div>
+        <h2 class="section-title">
+          Skills &amp; <span class="gradient-text">Technologies</span>
+        </h2>
+        <p class="section-subtitle">
+          Comprehensive stack spanning modern frontend frameworks, cloud backend microservices, robust databases, and devops tooling.
+        </p>
+      </div>
+
+      <!-- Skill Category Filter Controls -->
+      <div id="skills-controls" class="skills-controls fade-in-up">
+        <!-- Rendered from portfolioData in data.js -->
+      </div>
+
+      <!-- Skills Cards Grid -->
+      <div id="skills-grid" class="skills-grid">
+        <!-- Rendered from portfolioData in data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Projects Showcase Section
+       ========================================================================= -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <div class="section-pill">
+          <i class="fa-solid fa-rocket"></i> Portfolio Showcase
+        </div>
+        <h2 class="section-title">
+          Featured <span class="gradient-text">Projects</span>
+        </h2>
+        <p class="section-subtitle">
+          A curated selection of real-world web applications, distributed platforms, developer tools, and intelligent systems.
+        </p>
+      </div>
+
+      <!-- Projects Category Filters & Live Search -->
+      <div class="projects-filter-bar fade-in-up">
+        <div id="projects-categories" class="projects-categories">
+          <!-- Rendered from portfolioData in data.js -->
+        </div>
+
+        <div class="project-search-box">
+          <i class="fa-solid fa-magnifying-glass project-search-icon"></i>
+          <input type="text" id="project-search-input" class="project-search-input" placeholder="Search by tech or keyword..." aria-label="Search projects">
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div id="projects-grid" class="projects-grid">
+        <!-- Rendered from portfolioData in data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Experience & Education Section
+       ========================================================================= -->
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <div class="section-pill">
+          <i class="fa-solid fa-timeline"></i> Career Milestones
+        </div>
+        <h2 class="section-title">
+          Experience &amp; <span class="gradient-text">Education</span>
+        </h2>
+        <p class="section-subtitle">
+          My professional track record, industry experience, and academic foundation in Computer Science.
+        </p>
+      </div>
+
+      <!-- Experience / Education Toggle Tabs -->
+      <div id="timeline-toggle-tabs" class="timeline-toggle-tabs fade-in-up">
+        <button class="tab-btn active" data-tab="experience">
+          <i class="fa-solid fa-briefcase"></i> Work Experience
+        </button>
+        <button class="tab-btn" data-tab="education">
+          <i class="fa-solid fa-graduation-cap"></i> Education
+        </button>
+      </div>
+
+      <!-- Timeline Cards Container -->
+      <div id="timeline-container" class="timeline-container">
+        <!-- Rendered from portfolioData in data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Certifications & Achievements Section
+       ========================================================================= -->
+  <section id="achievements" class="achievements-section">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <div class="section-pill">
+          <i class="fa-solid fa-award"></i> Recognition
+        </div>
+        <h2 class="section-title">
+          Certifications &amp; <span class="gradient-text">Achievements</span>
+        </h2>
+        <p class="section-subtitle">
+          Industry recognized certifications and competitive hackathon honors.
+        </p>
+      </div>
+
+      <div id="achievements-grid" class="achievements-grid">
+        <!-- Rendered from portfolioData in data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Contact Section
+       ========================================================================= -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <div class="section-pill">
+          <i class="fa-regular fa-paper-plane"></i> Get In Touch
+        </div>
+        <h2 class="section-title">
+          Let's Build Something <span class="gradient-text">Extraordinary</span>
+        </h2>
+        <p class="section-subtitle">
+          Have an exciting project in mind, open engineering role, or just want to discuss modern technology? My inbox is always open.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info & Socials -->
+        <div class="contact-info-panel fade-in-up">
+          <h3 class="contact-highlight-title">
+            Looking for a dedicated software developer?
+          </h3>
+          <p class="contact-highlight-desc">
+            I am currently open to full-time developer positions, high-impact contract roles, and collaborative projects. Feel free to connect directly or send a message through the form.
+          </p>
+
+          <div class="contact-details-list">
+            <!-- Email Item with 1-click Copy -->
+            <div class="contact-detail-card">
+              <div class="contact-card-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="contact-card-text">
+                <div class="contact-card-label">Email Address</div>
+                <div class="contact-card-value">jaydip.dev@example.com</div>
+              </div>
+              <button id="copy-email-btn" class="copy-email-btn" title="Copy to clipboard">
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <!-- LinkedIn Item -->
+            <a href="https://linkedin.com/in/jaydip-dev" target="_blank" rel="noopener noreferrer" class="contact-detail-card">
+              <div class="contact-card-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-card-text">
+                <div class="contact-card-label">LinkedIn</div>
+                <div class="contact-card-value">linkedin.com/in/jaydip-dev</div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square" style="color: var(--text-dim); font-size: 0.85rem;"></i>
+            </a>
+
+            <!-- GitHub Item -->
+            <a href="https://github.com/jaydip-dev" target="_blank" rel="noopener noreferrer" class="contact-detail-card">
+              <div class="contact-card-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="contact-card-text">
+                <div class="contact-card-label">GitHub</div>
+                <div class="contact-card-value">github.com/jaydip-dev</div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square" style="color: var(--text-dim); font-size: 0.85rem;"></i>
+            </a>
+
+            <!-- Location Card -->
+            <div class="contact-detail-card">
+              <div class="contact-card-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-card-text">
+                <div class="contact-card-label">Location &amp; Availability</div>
+                <div class="contact-card-value">India • Remote Worldwide (EST/PST/GMT Friendly)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form Card -->
+        <div class="contact-form-card fade-in-up">
+          <form id="portfolio-contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name <span style="color: #ef4444;">*</span></label>
+              <input type="text" id="contact-name" class="form-control" placeholder="e.g. Sarah Connor" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address <span style="color: #ef4444;">*</span></label>
+              <input type="email" id="contact-email" class="form-control" placeholder="e.g. sarah@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" class="form-control" placeholder="e.g. Frontend Engineering Opportunity / Project Inquiry">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Your Message <span style="color: #ef4444;">*</span></label>
+              <textarea id="contact-message" class="form-control" placeholder="Tell me about your idea, project scope, or opportunity..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary form-submit-btn">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Site Footer
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Jaydip<span class="gradient-text">.dev</span></h3>
+          <p>Software Developer | Crafting Scalable, Modern Digital Experiences.</p>
+        </div>
+
+        <div class="hero-socials" style="margin-top: 0;">
+          <a href="https://github.com/jaydip-dev" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/jaydip-dev" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://instagram.com/jaydip_codes" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="mailto:jaydip.dev@example.com" class="social-icon-btn" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Jaydip. Built with passion, precision, and modern web standards.
+        </div>
+        <a href="#hero" class="back-to-top-btn" title="Back to top" aria-label="Scroll back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Project Detail Quick View Modal
+       ========================================================================= -->
+  <div id="project-modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button id="modal-close-btn" class="modal-close-btn" title="Close modal" aria-label="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-thumb-box">
+        <img id="modal-img" src="" alt="">
+      </div>
+
+      <div class="modal-body">
+        <div id="modal-category" class="modal-category"></div>
+        <h3 id="modal-title" class="modal-title"></h3>
+        <p id="modal-desc" class="modal-desc"></p>
+
+        <!-- Metric Highlight Card -->
+        <div class="modal-metric-card">
+          <div id="modal-metric-num" class="modal-metric-num"></div>
+          <div id="modal-metric-label" class="modal-metric-label"></div>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="font-size: 0.85rem; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">
+            Technologies &amp; Architecture
+          </h4>
+          <div id="modal-tech-tags" class="project-tech-tags"></div>
+        </div>
+
+        <div class="modal-actions">
+          <a id="modal-live-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Live Preview
+          </a>
+          <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <i class="fa-brands fa-github"></i> View GitHub Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Floating Pill -->
+  <div id="toast-notification" class="toast-notification" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message">Notification message</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

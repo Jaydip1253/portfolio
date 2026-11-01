@@ -1,0 +1,21 @@
+{
+  "name": "jaydip-developer-portfolio",
+  "version": "1.0.0",
+  "description": "Modern, premium, and visually stunning personal portfolio website for Jaydip, Software Developer.",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "software-developer",
+    "fullstack",
+    "react",
+    "javascript",
+    "typescript",
+    "glassmorphism",
+    "dark-theme"
+  ],
+  "author": "Jaydip",
+  "license": "MIT"
+}
